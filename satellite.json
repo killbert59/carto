@@ -1,0 +1,32 @@
+{
+  "version": 8,
+  "id": "satellite",
+  "name": "Satellite",
+  "sources": {
+    "satellite": {
+      "url": "https://raw.githubusercontent.com/killbert59/carto/main/tiles.json",
+      "type": "raster"
+    }
+  },
+  "layers": [
+    {
+      "id": "Satellite",
+      "type": "raster",
+      "source": "satellite",
+      "minzoom": 0,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    }
+  ],
+  "bearing": 0,
+  "pitch": 0,
+  "center": [0, 0],
+  "zoom": 1
+}
